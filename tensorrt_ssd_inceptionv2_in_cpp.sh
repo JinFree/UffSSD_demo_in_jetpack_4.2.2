@@ -13,5 +13,6 @@ convert_to_uff frozen_inference_graph.pb -O NMS -p config.py
 cd ../data/ssd
 cp ../../ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.uff sample_ssd_relu6.uff
 
-cd ../../bin && ./sample_uff_ssd
-
+cd ../../bin 
+./sample_uff_ssd
+./sample_uff_ssd --fp16
